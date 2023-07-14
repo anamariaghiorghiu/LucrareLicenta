@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left-column {
+    flex: 6;
+}
+
+.title, .slogan {
+    flex: 1;
+    padding-left: 30px;
+    background: linear-gradient(to right, black 40% ,#FF7200 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 50%;
+}
+
+.title {
+    font-size: 130px;
+}
+
+.slogan {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.blankcanva {
+    font-size: 40px;
+    background: linear-gradient(to right, black 40% ,#FF7200 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutUsTitle{
+    font-size: 70px;
+    padding-left: 20px;
+}
+
+.aboutUsTitle > .blankcanva{
+    font-size: 70px;
+}
+
+.aboutUsContent{
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.separator{
+    color: #FF7200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.right-column {
+    flex: 4;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.decoration {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.terms {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 2;
+    height: 250px;
+    width: 170px;
+    animation: float 1s ease-in-out infinite;
+    visibility: visible;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
